@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <button class="logout" (click)="logout()"> LogOut</button><br><br>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header" style="text-align: center;">Your Order Details </div>
+              </div>
+          </div>
+      </div>
+      <br/>
+      <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <table class="table table-stripped" border="1">
+            <tr>
+              
+              <th>Order Id</th>
+              <th>Email Id</th>
+              <th>Total Items Ordered</th>
+              <th>Ordered Items</th>
+              <th>Order Date</th>
+              <th>Total Price</th>
+              
+            </tr>
+            <tr >
+              <td>{{getorder.OrderId}}</td>
+              <td>{{getorder.emailid}}</td>
+              <td>{{getorder.totalitems}}</td>
+              <td [innerHTML]="getorder.items">{{getorder.items}}</td>
+              <td>{{getorder.dt}}</td>
+              <td>{{getorder.total}}</td>
+              
+              
+             
+            </tr>
+            </table>
+           
+          </div>
+          <div class="col-md-3">
+            
+          </div>
+       
+      </div>
+      
+      </div>

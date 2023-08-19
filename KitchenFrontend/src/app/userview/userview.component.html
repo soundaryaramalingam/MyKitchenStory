@@ -1,0 +1,66 @@
+<div>
+    <h3 >Welcome {{ getuser() }} !!!</h3>
+  </div>
+  <hr/>
+  <div style="text-align:center;width:100%">
+     
+   
+      <button class="logout" (click)="logout()"> LogOut</button>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <button class="checkout" (click)="checkout()"> CheckOut</button>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      
+     
+    </div>
+    <hr />
+  <div style="color:darkblue; font-size: 20px;"> 
+    &nbsp;&nbsp;&nbsp;
+    <label>Search:</label>
+    </div>
+    <div class="col-md-10">
+      <input type="text" style="border-color:brown;" name="ename" class="form-control" [(ngModel)]="ename" (ngModelChange)="search()"/>
+    </div>
+    <div class="col-md-02"></div>
+    <br>
+  <div class="container">
+
+
+    <div class="card">
+        
+     
+
+    <h3 class="text-center">medicines List</h3>
+    
+  <div class="card-body">
+             
+    <table class="table table-striped">
+        <thead>
+            <th> id </th>
+            <th>name</th>
+            <th>desc</th>
+            <th>category</th>
+         
+            <th>price</th>
+  
+            <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let kit of kitchen"> 
+                <td>{{kit.id}}</td>
+                <td>{{kit.name}}</td>
+                <td>{{kit.descr}}</td>
+                <td>{{kit.category}}</td>
+               
+                <td>{{kit.price}}</td>   
+                <td>  <button class="add" (click)="addcart(kit.id)"> Add</button></td>
+             </tr>
+        </tbody>
+    </table>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  

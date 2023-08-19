@@ -1,0 +1,63 @@
+<div class="welcome">
+    <h3 >Welcome {{ getuser() }} !!!</h3>
+  </div>
+  <hr/>
+  <div style="text-align:center;width:100%">
+     
+    <button class="add" (click)="addkitchen()"> Add Items</button>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <button class="changepass" (click)="changepass()"> Change Password</button>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <button class="logout" (click)="logout()"> LogOut</button>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      
+     
+    </div>
+    <hr />
+    
+  
+  
+    
+  
+  <hr/>
+  
+  <div class="container">
+      
+    <div class="card">
+        
+        
+    <h3 class="text-center">Movies List</h3>
+  <div class="card-body">
+             
+    <table class="table table-striped">
+        <thead>
+            <th> id </th>
+            <th>name</th>
+            <th>desc</th>
+            <th>category</th>
+            <th>show_date</th>
+            <th>show_timings</th>
+            <th>price</th>
+  
+            <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let kit of kitchen"> 
+                <td>{{kit.id}}</td>
+                <td>{{kit.name}}</td>
+                <td>{{kit.descr}}</td>
+                <td>{{kit.category}}</td>
+                <td>{{kit.price}}</td>   
+                <td>  <button class="edit" (click)="updatekitchen(kit.id)"> Edit</button></td>
+                <td><button class="delete" (click)="deletekitchen(kit.id)">Delete</button></td>
+             </tr>
+        </tbody>
+    </table>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  

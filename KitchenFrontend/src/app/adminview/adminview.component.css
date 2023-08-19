@@ -1,0 +1,21 @@
+.add{
+    background:blue;
+    color: azure;
+}
+.changepass{
+    background: blue;
+    color: azure;
+}
+.logout{
+    background: blue;
+    color: azure;
+}
+.edit{
+    background-color: green;
+}
+.delete{
+    background-color: red;
+}
+.welcome{
+    background-color: brown;
+}

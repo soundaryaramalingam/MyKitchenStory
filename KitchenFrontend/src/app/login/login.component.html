@@ -1,0 +1,42 @@
+
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-header">
+                    <b>Admin Login Here</b>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="loginform" #logForm="ngForm" (ngSubmit)="CheckUserDetails()">
+                    <label>Email Id</label>
+                    <input type="text" formControlName="emailid" class="form-control" />
+                    <label>Password</label>
+                    <input type="text" formControlName="pass" class="form-control" />
+                    <br />
+                    <input type="submit"  value="Login"  class="btn btn-primary"  />
+                </form>
+                    <div [innerHTML]="msg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+        <div class="card">
+            <div class="card-header">
+                <b>User Login Here</b>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="loginform" #userlogForm="ngForm" (ngSubmit)="CheckDetails()">
+                <label>Email Id</label>
+                <input type="text" formControlName="emailid" class="form-control" />
+                <label>Password</label>
+                <input type="text" formControlName="pass" class="form-control" />
+                <br />
+                <input type="submit"  value="Login"  class="btn btn-primary"  />
+            </form>
+                <div [innerHTML]="usrmsg"></div>
+            </div>
+        </div>
+    </div>
+</div>

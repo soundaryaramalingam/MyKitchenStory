@@ -1,0 +1,42 @@
+.header{
+    background-color: blueviolet;
+}
+
+.header img {
+    float: left;
+    border: 1;
+    border-color: black;
+    background-color: gray;
+  }
+.header h1{
+     text-align: center;
+     color: cyan;
+     content: "";
+  }
+
+  ngb-carousel .wrapper {
+  /*  position: absolute;*/
+  width:100%;
+  min-width: 100;
+    object-fit: cover;
+    background-size: cover;
+    height: 0;
+    padding-top: 100%; /* Keep ratio for 900x500 images */
+    border: 1px solid black;
+    border-radius: 20%;
+    border-color: brown;
+
+  }
+.carousel{
+    width: 500;
+}
+  .foot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .caro
+  {
+    background-color: coral;
+  }

@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    
+  <h2> Update the Movie </h2>
+                 </div>
+  <div class="card-body">
+  <form [formGroup]="movupdateform" #saveform="ngForm" (ngSubmit)="submit()">
+    <div class="form-group">  
+        <label for="name"> Name :</label>
+        <input type="text" formControlName="name" id="name" class="form-control"  [(ngModel)]="movie.name"/> <br>
+       
+       </div>
+       <div class="form-group">  
+         <label for="descr">Desc :</label>
+        <input type="text" formControlName="descr" id="descr" class="form-control" [(ngModel)]="movie.descr"/><br>
+        </div>
+        <div class="form-group">  
+        <label for="category">Category :</label>
+        <input type="text" formControlName="category" id="category" class="form-control" [(ngModel)]="movie.category" /><br>
+        </div>
+       
+       <div class="form-group">  
+        <label for="price">price :</label>
+        <input type="number" formControlName="price" id="price" class="form-control" [(ngModel)]="movie.price"/><br>
+   </div>
+    <button type="submit"  class="btn btn-primary" >Update</button>
+  </form>
+   </div>
+  </div>  
+     </div>
+     <div class="col-md-3"></div>
+    </div>
+    </div>
+  
